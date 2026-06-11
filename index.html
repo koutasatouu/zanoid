@@ -8,6 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
@@ -75,8 +79,12 @@
         <a
           href="#"
           class="font-serif text-2xl md:text-3xl font-bold tracking-tight text-brand-900"
-          >ZANO ID</a
-        >
+          ><img
+            src="https://down-tx-id.img.susercontent.com/d4cae2997c1a7ebe00b42446942dd78b_tn.webp"
+            alt="ZANO ID"
+            class="h-10 w-auto"
+          />
+        </a>
         <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
           <a href="#home" class="hover:text-brand transition-colors">HOME</a>
           <a href="#catalog" class="hover:text-brand transition-colors"
@@ -100,9 +108,22 @@
       id="home"
       class="relative pt-20 flex flex-col overflow-hidden w-full bg-brand-50"
     >
+      <!-- BAGIAN BARU: Layer Background Image -->
+      <div
+        id="home-bg"
+        class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-opacity duration-75"
+        style="
+          background-image: url(&quot;https://down-tx-id.img.susercontent.com/7cbe726a60d0e3a002c1889ab442bc47.webp&quot;);
+        "
+      >
+        <!-- Overlay putih transparan agar teks judul tetap mudah dibaca -->
+        <div class="absolute inset-0 bg-white/60 backdrop-blur-[2px]"></div>
+      </div>
+
+      <!-- UPDATE: Tambahkan 'relative z-10' agar container ini berada di atas background -->
       <div
         id="scroll-container"
-        class="h-[50rem] md:h-[70rem] flex items-center justify-center relative p-4 md:p-20 w-full"
+        class="relative z-10 h-[80rem] md:h-[100rem] flex items-center justify-center p-4 md:p-20 w-full"
       >
         <div class="w-full relative perspective-container">
           <div
@@ -129,7 +150,7 @@
           >
             <div class="h-full w-full overflow-hidden rounded-2xl bg-gray-100">
               <img
-                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1400&h=720"
+                src="https://instagram.fcgk3-4.fna.fbcdn.net/v/t51.82787-15/701003635_18377330743206321_6216141354155173724_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=107&ig_cache_key=Mzg5OTA2MjY4Nzk2MzUyMTI4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjgyNC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=-wemy4a0swwQ7kNvwEnXrE7&_nc_oc=Adqb97K34yFhW2dWswvALdYnzD7_cZ6wBHNrPOkpZyObI0S0AbYXX-XHfl805L_R0VA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk3-4.fna&_nc_gid=OHqwV_wJJ1FFAPXfe5DmgQ&_nc_ss=7a22e&oh=00_Af_2wFMKh_HMrTOT_7FgvhriUhAWYvYUezJBJnh4Chdg8w&oe=6A30F517"
                 alt="ZANO ID Collection"
                 class="object-cover h-full w-full object-center"
               />
@@ -145,9 +166,9 @@
     >
       <div class="mb-20">
         <h2
-          class="text-sm md:text-base font-bold text-gray-900 uppercase tracking-widest mb-8"
+          class="text-sm md:text-base font-bold text-gray-900 tracking-widest mb-8"
         >
-          NEW IN + SPECIAL S.O PRICE
+          NEW IN PREMIUM COLLECTION
         </h2>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10">
@@ -156,21 +177,21 @@
               class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden mb-3"
             >
               <span
-                class="absolute top-2 left-2 bg-white/90 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-gray-800 z-10 border border-gray-200"
+                class="absolute top-2 left-2 bg-white/90 px-2 py-1 text-[9px] font-bold tracking-wider text-gray-800 z-10 border border-gray-200 uppercase"
                 >New</span
               >
               <img
-                src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wt-moxiu5y0ka3116.webp"
                 alt="Pleated Dress"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Zano Premium Pleated Dress
+            <h3 class="text-xs text-gray-800 font-medium truncate">
+              Shalina Skirt Bahan Satin
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 250.000</span>
-              <span class="text-red-500 font-bold">Rp 189.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 250.000</span> -->
+              <span class="text-red-500 font-bold">Rp 99.000</span>
             </div>
           </div>
 
@@ -179,40 +200,44 @@
               class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden mb-3"
             >
               <span
-                class="absolute top-2 left-2 bg-white/90 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-gray-800 z-10 border border-gray-200"
-                >S.O Price</span
+                class="absolute top-2 left-2 bg-white/90 px-2 py-1 text-[9px] font-bold tracking-wider text-gray-800 z-10 border border-gray-200 uppercase"
+                >New</span
               >
               <img
-                src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wj-moxc0o62n18g0b@resize_w450_nl.webp"
                 alt="Linen Blouse"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Minimalist Linen Blouse
+            <h3 class="text-xs text-gray-800 font-medium truncate">
+              ZANO BASICS Kulot Deluna
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 180.000</span>
-              <span class="text-red-500 font-bold">Rp 125.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 180.000</span> -->
+              <span class="text-red-500 font-bold">Rp 135.000</span>
             </div>
           </div>
 
           <div class="group relative flex flex-col cursor-pointer">
+            <span
+              class="absolute top-2 left-2 bg-white/90 px-2 py-1 text-[9px] font-bold tracking-wider text-gray-800 z-10 border border-gray-200 uppercase"
+              >New</span
+            >
             <div
               class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden mb-3"
             >
               <img
-                src="https://images.unsplash.com/photo-1589465885857-44edb59bbff2?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/id-11134207-822ws-mo980vm1d4apfa@resize_w450_nl.webp"
                 alt="Modern Abaya"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
             <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Zano Modern Abaya
+              ZANO BASICS Sabrine Skirt
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 299.000</span>
-              <span class="text-red-500 font-bold">Rp 210.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 299.000</span> -->
+              <span class="text-red-500 font-bold">Rp 139.000</span>
             </div>
           </div>
 
@@ -221,21 +246,21 @@
               class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden mb-3"
             >
               <span
-                class="absolute top-2 left-2 bg-white/90 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-gray-800 z-10 border border-gray-200"
-                >Restock</span
-              >
+                class="absolute top-2 left-2 bg-white/90 px-2 py-1 text-[9px] font-bold tracking-wider text-gray-800 z-10 border border-gray-200 uppercase"
+                >New
+              </span>
               <img
-                src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/id-11134207-822ws-mlymtaa550qp1e@resize_w450_nl.webp"
                 alt="Wide Leg Trousers"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Tailored Wide-Leg Trousers
+            <h3 class="text-xs text-gray-800 font-medium truncate">
+              Blouse Shreya
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 190.000</span>
-              <span class="text-red-500 font-bold">Rp 145.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 190.000</span> -->
+              <span class="text-red-500 font-bold">Rp 118.000</span>
             </div>
           </div>
         </div>
@@ -255,7 +280,7 @@
         <h2
           class="text-sm md:text-base font-bold text-gray-900 uppercase tracking-widest mb-8"
         >
-          PROMO CASUAL COLLECTION
+          Popular Items
         </h2>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10">
@@ -268,17 +293,17 @@
                 >Promo</span
               >
               <img
-                src="https://images.unsplash.com/photo-1434389678232-0401b6ab26ce?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/sg-11134201-22100-yhddp83kgfiv21.webp"
                 alt="Cotton Cardigan"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Oversized Cotton Cardigan
+            <h3 class="text-xs text-gray-800 font-medium truncate">
+              ZANO BASICS Sweater Crop Gotye
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 195.000</span>
-              <span class="text-red-500 font-bold">Rp 155.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 195.000</span> -->
+              <span class="text-red-500 font-bold">Rp 65.000</span>
             </div>
           </div>
 
@@ -287,17 +312,17 @@
               class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden mb-3"
             >
               <img
-                src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r98t-lr7d4w2w520pae.webp"
                 alt="Summer Maxi"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Floral Summer Maxi
+            <h3 class="text-xs text-gray-800 font-medium truncate">
+              ZANO BASICS Ophellia Crop Top
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 250.000</span>
-              <span class="text-red-500 font-bold">Rp 195.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 250.000</span> -->
+              <span class="text-red-500 font-bold">Rp 40.000</span>
             </div>
           </div>
 
@@ -310,17 +335,17 @@
                 >Promo</span
               >
               <img
-                src="https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wh-mlypongu7nd4bd.webp"
                 alt="Basic Tee"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Classic Ribbed Knit Top
+            <h3 class="text-xs text-gray-800 font-medium truncate">
+              Nichole Top Sweater
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 150.000</span>
-              <span class="text-red-500 font-bold">Rp 99.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 150.000</span> -->
+              <span class="text-red-500 font-bold">Rp 85.000</span>
             </div>
           </div>
 
@@ -329,17 +354,17 @@
               class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden mb-3"
             >
               <img
-                src="https://images.unsplash.com/photo-1509631179647-0c500ba14174?auto=format&fit=crop&q=80&w=400"
+                src="https://down-id.img.susercontent.com/file/sg-11134201-22120-9oied3lsnflvb7.webp"
                 alt="Casual Pants"
                 class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <h3 class="text-xs text-gray-800 uppercase font-medium truncate">
-              Highwaist Cullotes
+            <h3 class="text-xs text-gray-800 font-medium truncate">
+              ZANO BASICS Sweater Crop LeoPard
             </h3>
             <div class="flex items-center gap-2 mt-1 text-xs">
-              <span class="line-through text-gray-400">Rp 210.000</span>
-              <span class="text-red-500 font-bold">Rp 165.000</span>
+              <!-- <span class="line-through text-gray-400">Rp 210.000</span> -->
+              <span class="text-red-500 font-bold">Rp 65.000</span>
             </div>
           </div>
         </div>
@@ -354,60 +379,6 @@
           </a>
         </div>
       </div>
-    </section>
-
-    <section id="catalog" class="py-24 px-6 md:px-12 max-w-7xl mx-auto w-full">
-      <div class="text-center mb-16">
-        <h2
-          class="font-serif text-3xl md:text-4xl font-bold text-brand-900 mb-4"
-        >
-          Our Collection
-        </h2>
-        <p class="text-gray-500 max-w-2xl mx-auto">
-          Shop our latest pieces directly via Shopee.
-        </p>
-      </div>
-
-      <div
-        class="flex flex-wrap justify-center gap-3 mb-12"
-        id="filter-container"
-      >
-        <button
-          onclick="filterCatalog('All')"
-          class="filter-btn active px-6 py-2 rounded-full border border-gray-300 text-sm font-medium bg-brand-900 text-white transition-all"
-        >
-          All
-        </button>
-        <button
-          onclick="filterCatalog('Dresses')"
-          class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium text-gray-600 hover:border-brand hover:text-brand transition-all"
-        >
-          Dresses
-        </button>
-        <button
-          onclick="filterCatalog('Tops')"
-          class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium text-gray-600 hover:border-brand hover:text-brand transition-all"
-        >
-          Tops
-        </button>
-        <button
-          onclick="filterCatalog('Outerwear')"
-          class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium text-gray-600 hover:border-brand hover:text-brand transition-all"
-        >
-          Outerwear
-        </button>
-        <button
-          onclick="filterCatalog('Modest')"
-          class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium text-gray-600 hover:border-brand hover:text-brand transition-all"
-        >
-          Modest
-        </button>
-      </div>
-
-      <div
-        id="product-grid"
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
-      ></div>
     </section>
 
     <section id="stores" class="py-24 bg-brand-50 w-full">
@@ -492,33 +463,40 @@
         <div class="flex flex-col items-center md:items-end gap-4">
           <h3 class="text-lg font-semibold tracking-wider">Connect With Us</h3>
           <div class="flex flex-wrap justify-center md:justify-end gap-4 mt-2">
+            <!-- Instagram -->
             <a
               href="https://www.instagram.com/zano_id/"
               target="_blank"
               class="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-brand transition-colors"
             >
-              <i data-lucide="instagram" class="w-5 h-5"></i>
+              <i class="fa-brands fa-instagram text-xl text-white"></i>
             </a>
+
+            <!-- Shopee (Menggunakan ikon Shopping Bag solid) -->
             <a
               href="https://shopee.co.id/zano_id"
               target="_blank"
               class="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-brand transition-colors"
             >
-              <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+              <i class="fa-solid fa-bag-shopping text-xl text-white"></i>
             </a>
+
+            <!-- TikTok -->
             <a
               href="https://www.tiktok.com/@zano_id"
               target="_blank"
               class="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-brand transition-colors"
             >
-              <i data-lucide="smartphone" class="w-5 h-5"></i>
+              <i class="fa-brands fa-tiktok text-xl text-white"></i>
             </a>
+
+            <!-- WhatsApp -->
             <a
               href="https://api.whatsapp.com/send/?phone=6281317592058&text=Hallo+Admin+Saya+Mau+Order+&type=phone_number&app_absent=0"
               target="_blank"
-              class="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 hover:bg-green-400 transition-colors"
+              class="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-green-500 transition-colors"
             >
-              <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+              <i class="fa-brands fa-whatsapp text-xl text-white"></i>
             </a>
           </div>
         </div>
@@ -532,126 +510,20 @@
     </footer>
 
     <script>
-      // 1. Initialize Icons & Year
       lucide.createIcons();
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      // 2. Interactive Product Catalog Logic
-      const products = [
-        {
-          id: 1,
-          name: "Premium Pleated Dress",
-          category: "Dresses",
-          price: "Rp 189.000",
-          image:
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=600",
-        },
-        {
-          id: 2,
-          name: "Minimalist Linen Blouse",
-          category: "Tops",
-          price: "Rp 125.000",
-          image:
-            "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&q=80&w=600",
-        },
-        {
-          id: 3,
-          name: "Oversized Cotton Cardigan",
-          category: "Outerwear",
-          price: "Rp 155.000",
-          image:
-            "https://images.unsplash.com/photo-1434389678232-0401b6ab26ce?auto=format&fit=crop&q=80&w=600",
-        },
-        {
-          id: 4,
-          name: "ZANO Modern Abaya",
-          category: "Modest",
-          price: "Rp 210.000",
-          image:
-            "https://images.unsplash.com/photo-1589465885857-44edb59bbff2?auto=format&fit=crop&q=80&w=600",
-        },
-        {
-          id: 5,
-          name: "Floral Summer Maxi",
-          category: "Dresses",
-          price: "Rp 195.000",
-          image:
-            "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=600",
-        },
-        {
-          id: 6,
-          name: "Tailored Wide-Leg Trousers",
-          category: "Tops",
-          price: "Rp 145.000",
-          image:
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=600",
-        },
-      ];
-
-      const grid = document.getElementById("product-grid");
-
-      function renderProducts(items) {
-        grid.innerHTML = "";
-        items.forEach((item) => {
-          const card = document.createElement("div");
-          card.className = "group flex flex-col fade-in";
-          card.innerHTML = `
-          <div class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 mb-4">
-            <img src="${item.image}" alt="${item.name}" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="flex justify-between items-start mb-2">
-            <div>
-              <p class="text-xs text-brand font-semibold uppercase tracking-wider mb-1">${item.category}</p>
-              <h3 class="font-serif text-lg font-bold text-gray-900">${item.name}</h3>
-            </div>
-            <p class="font-medium text-gray-900">${item.price}</p>
-          </div>
-          <a href="https://shopee.co.id/zano_id" target="_blank" class="mt-auto w-full py-3 border-2 border-brand-900 text-brand-900 text-center font-medium rounded-xl hover:bg-brand-900 hover:text-white transition-colors flex justify-center items-center gap-2">
-            <i data-lucide="shopping-bag" class="w-4 h-4"></i> Buy on Shopee
-          </a>
-        `;
-          grid.appendChild(card);
-        });
-        lucide.createIcons(); // Re-initialize icons inside new HTML
-      }
-
-      // Initial render
-      renderProducts(products);
-
-      // Filter Logic
-      window.filterCatalog = function (category) {
-        // Update Button Styles
-        const buttons = document.querySelectorAll(".filter-btn");
-        buttons.forEach((btn) => {
-          if (btn.innerText === category) {
-            btn.className =
-              "filter-btn active px-6 py-2 rounded-full border border-gray-300 text-sm font-medium bg-brand-900 text-white transition-all";
-          } else {
-            btn.className =
-              "filter-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium text-gray-600 hover:border-brand hover:text-brand transition-all";
-          }
-        });
-
-        // Filter Data
-        if (category === "All") {
-          renderProducts(products);
-        } else {
-          const filtered = products.filter((p) => p.category === category);
-          renderProducts(filtered);
-        }
-      };
-
-      // 3. 3D Scroll Animation Logic
       function mapRange(value, inMin, inMax, outMin, outMax) {
         return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
       }
 
       const header = document.getElementById("animated-header");
       const card = document.getElementById("animated-card");
+      const homeBg = document.getElementById("home-bg"); // BAGIAN BARU: Daftarkan elemen background
 
       function handleScroll() {
         const scrollY = window.scrollY;
-        const scrollThreshold = 700;
+        const scrollThreshold = 450;
 
         let progress = scrollY / scrollThreshold;
         if (progress < 0) progress = 0;
@@ -659,24 +531,28 @@
 
         const isMobile = window.innerWidth <= 768;
 
-        // Header fades out and moves up
         const translateY = mapRange(progress, 0, 1, 0, -50);
         const headerOpacity = mapRange(progress, 0, 0.5, 1, 0);
 
-        // Card rotates to flat and scales up
-        const rotateX = mapRange(progress, 0, 1, 25, 0);
-        let scaleX = mapRange(progress, 0, 1, 0.9, 1);
+        const rotateX = mapRange(progress, 0, 1, 95.44, 0);
+        let scaleX = mapRange(progress, 0, 1, 0.85, 1);
+
+        // BAGIAN BARU: Hitung tingkat kepudaran background dari 1 (terang) ke 0 (hilang)
+        const bgOpacity = mapRange(progress, 0, 0.8, 1, 0);
 
         window.requestAnimationFrame(() => {
           header.style.transform = `translateY(${translateY}px)`;
           header.style.opacity = headerOpacity;
           card.style.transform = `rotateX(${rotateX}deg) scale(${scaleX})`;
+
+          // BAGIAN BARU: Terapkan efek pudar ke elemen background
+          if (homeBg) homeBg.style.opacity = bgOpacity;
         });
       }
 
       window.addEventListener("scroll", handleScroll, { passive: true });
       window.addEventListener("resize", handleScroll);
-      handleScroll(); // Trigger once on load
+      handleScroll();
     </script>
   </body>
 </html>
